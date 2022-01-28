@@ -25,9 +25,7 @@ def calc_IR_line(ir_angle:float, cam_info:dict)->list:
 
     return ir_line_coord
     
-def draw_IR_line(cam_frame,ir_line_coord:list,ir_line_info:dict)->None:
-    ir_color=ir_line_info['color']
-    ir_thick=ir_line_info['thickness']
+def draw_IR_line(cam_frame,ir_line_coord:list,ir_color,ir_thick)->None:
     
     cv2.line(cam_frame,ir_line_coord[0],ir_line_coord[1],ir_color,ir_thick)
     
