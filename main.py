@@ -4,7 +4,9 @@ import vision_part
 import communi_part
 
 
+
 # 1. UDP Communication Check
+
 is_udpOK=communi_part.check_udp(config.communi_config)
 print("[debug] udp connect check",is_udpOK)
 
