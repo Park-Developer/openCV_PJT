@@ -100,7 +100,7 @@ def run_cam(vision_config:dict,shared_que:Queue)->int:#,ir_que:Queue):
                 draw_func.draw_IR_line(img_boxes,ir_lineCoord,ir_line_color,ir_line_thick)
                 
                 cv2.fillConvexPoly(img_boxes ,robot_body,(0,0,255)) # 외곽선 두께에 -1을 주면 내부가 색칳됨
-                cv2.putText(img_boxes ,"asd",(600,40),cv2.FONT_HERSHEY_PLAIN,1,(0,0,0))
+                cv2.putText(img_boxes ,"Normal Mode",(600,40),cv2.FONT_HERSHEY_PLAIN,1,(0,0,0))
 
 
                 cv2.imshow("Camera ",img_boxes)
